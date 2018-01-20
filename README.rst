@@ -6,7 +6,7 @@ Augmented Reality with English-Chinese Annotations App
 About The Development
 =====================
 
-This Augmented Reality with English-Chinese Annotations (ARE) Android app is based on `the Google TensorFlow demo app <https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/contrib/lite>`_.
+This Augmented Reality with English-Chinese Annotations (ARE) Android app is based on `the Google TensorFlow Lite demo app <https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/contrib/lite>`_.
 
 The original demo app infers a pretrained neural network model to recognize objects from images from smartphone camera, and annotate on the screen with the most probable 3 labels (English texts).
 
