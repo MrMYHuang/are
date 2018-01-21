@@ -43,6 +43,8 @@ public class ImageClassifier {
   private static final String TAG = "TfLiteCameraDemo";
 
   /** Name of the model file stored in Assets. */
+  // Download the quantized Mobilenet TensorFlow Lite model from
+  // https://storage.googleapis.com/download.tensorflow.org/models/tflite/mobilenet_v1_224_android_quant_2017_11_08.zip
   private static final String MODEL_PATH = "mobilenet_quant_v1_224.tflite";
 
   /** Name of the label file stored in Assets. */
