@@ -90,6 +90,9 @@ public class Camera2BasicFragment extends Fragment
   /** Max preview height that is guaranteed by Camera2 API */
   private static final int MAX_PREVIEW_HEIGHT = 1080;
 
+  /** Classification update interval. */
+  private static final int updateInterval = 1000;
+
   /**
    * {@link TextureView.SurfaceTextureListener} handles several lifecycle events on a {@link
    * TextureView}.
@@ -557,6 +560,11 @@ public class Camera2BasicFragment extends Fragment
             if (runClassifier) {
               classifyFrame();
             }
+          }
+          try {
+            Thread.sleep(updateInterval);
+          } catch (InterruptedException e) {
+            e.printStackTrace();
           }
           backgroundHandler.post(periodicClassify);
         }

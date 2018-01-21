@@ -114,7 +114,7 @@ public class ImageClassifier {
     long endTime = SystemClock.uptimeMillis();
     Log.d(TAG, "Timecost to run model inference: " + Long.toString(endTime - startTime));
     String textToShow = printTopKLabels();
-    textToShow = Long.toString(endTime - startTime) + "ms" + textToShow;
+    //textToShow = Long.toString(endTime - startTime) + "ms" + textToShow;
     return textToShow;
   }
 
